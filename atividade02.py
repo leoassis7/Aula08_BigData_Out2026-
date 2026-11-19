@@ -1,15 +1,12 @@
-#informações : 10 vendas, armazenar, apresentar soma de vendas  e qtd de vendas
+numeros = []
+quantidade = len(numeros)
+while True:
+    numero = int(input('Insira um número: '))
+    continuar = input(' Caso parar digite N. Ou insira enter: ').upper()
+    numeros.append(numero)
+    quantidade = len(numeros)
+    print(f'Quantidade de números armazenados: {quantidade}')
 
-vendas = []
-total = sum(vendas)
-
-
-for i in range(3):
-    venda = float(input('Informe o valor da venda: '))
-    vendas.append(venda) #adiciona na lista de produtos
-    total = sum(vendas)
-        
-  
-
-
-print(f'Total de vendas: {total}')
+    if continuar == 'N':
+        print(f'Total {numeros}')
+        break
