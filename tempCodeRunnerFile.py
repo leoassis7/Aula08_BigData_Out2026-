@@ -1,0 +1,1 @@
+print(f'Valores de vendas: {vendas}')
