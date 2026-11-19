@@ -18,5 +18,8 @@ print(produtos)
 
 #Removendo  da Lista
 produto_a_remover = input('\nDigite o nome do produto a remover: ')
-produtos.remove(produto_a_remover)
+
+if produto_a_remover in produtos:
+
+   produtos.remove(produto_a_remover)
 print(produtos)
